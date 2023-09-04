@@ -1,9 +1,9 @@
 // components/Footer.js
 const Footer = () => {
     return (
-      <footer className="bg-sky-100 py-8">
-        <div className="container sm:mx-20 px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <footer className="bg-sky-100 py-8 w-max-[1500px]">
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 px-20 ">
             <div className="text-center sm:text-left">
               <h3 className="text-lg font-semibold text-sky-300 ">About Us</h3>
               <p className="text-sm text-gray-600 mt-2">
@@ -29,8 +29,6 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-  
-            {/* Footer Section 3 - Contact Information */}
             <div className="text-center sm:text-left">
               <h3 className="text-lg font-semibold text-sky-300">Contact Us</h3>
               <p className="text-sm text-gray-600 mt-2">
@@ -39,13 +37,11 @@ const Footer = () => {
               <p className="text-sm text-gray-600">Phone: +1 (123) 456-7890</p>
             </div>
           </div>
-  
-          {/* Bottom Footer - Copyright */}
           <div className="text-center mt-8 text-sm text-gray-600">
            Created by <span className="text-sky-500">Adnan Rafiq Yousafzai</span> 
             © Copyright 2023. All rights reserved.
           </div>
-        </div>
+
       </footer>
     );
   };

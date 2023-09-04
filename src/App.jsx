@@ -9,6 +9,7 @@ import Products from "./components/Products";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Categbtn from "./components/ui/Categbtn";
 const App = () => {
 
   return (
@@ -19,11 +20,11 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/products" element={<Categbtn/>} />
           <Route path="/product/:id" element={<Product />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        {/* <Footer/> */}
+        <Footer/>
       </BrowserRouter>
     </div>
   );
