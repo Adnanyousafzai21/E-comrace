@@ -14,7 +14,7 @@ const Product = () => {
   const getdata = async () => {
     try {
       const response = await fetch(
-        `http://fakestoreapi.com/products/${param.id}`
+        // `http://fakestoreapi.com/products/${param.id}`
       );
       const data = await response.json();
       setResult(data); 
