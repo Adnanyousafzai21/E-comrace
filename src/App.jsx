@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/product/:id" element={<Product />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
       </BrowserRouter>
     </div>
   );

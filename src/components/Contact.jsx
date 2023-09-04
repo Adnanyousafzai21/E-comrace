@@ -12,7 +12,7 @@ const Contact = () => {
         </h3>
         <div className="flex md:justify-between  md:flex-row flex-col items-center ">
           <div className="md:w-[45%] w-[85%]  ">
-            <div className="w-auto flex justify-center">
+            <div className=" flex justify-center">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14473.81342371011!2d67.08640489999999!3d24.916621199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f31bc222ad5%3A0xaaa165b02713f08e!2sGulshan-e-Iqbal%20Block%2013%20D%201%20Gulshan-e-Iqbal%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1693738032980!5m2!1sen!2s"
                 width="600"

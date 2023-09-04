@@ -13,7 +13,7 @@ const Products = ({filter}) => {
     <>
     <div className="">
         {/* <Categbtn/> */}
-      <div className="flex flex-col items-center  gap-10 sm:flex-row sm:justify-between  flex-wrap py-10 duration-500 px-15 max-w-[1500px] m-auto">
+      <div className="flex flex-col items-center  gap-5 sm:flex-row sm:justify-between  flex-wrap py-10 duration-500 px-20 border border-sky-500 max-w-[1500px] ">
         {!show
           ? filter.slice(0, 8).map((product, i) => (
          
