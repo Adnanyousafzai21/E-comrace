@@ -5,8 +5,10 @@ import {Link}from "react-router-dom";
 import { ShoppingCart } from "lucide-react";
 import { Menu } from "lucide-react";
 import { X } from "lucide-react";
-
+import { useSelector } from "react-redux";
 const Navbar = () => {
+  const cartItems =  useSelector((state) => state.cart.items);
+
   const [open, setOpen] = useState(false);
 
   return (
@@ -26,9 +28,11 @@ const Navbar = () => {
         placeholder="search"
         className=" w-45 h-6 rounded border-gray-500 text-sm md:absolute hidden"
       />
+      <Link to={"/cart"}>
       <div className="w-6 h-6 bg-sky-100 rounded-full flex justify-center items-center ">
-        <ShoppingCart className="w-4 h-4" />
+        <ShoppingCart className="w-4 h-4" />{cartItems.length}
       </div>
+      </Link>
       <div className=" md:hidden text-sky-300">
        { open?<X onClick={()=>{setOpen(!open)}}/> :<Menu onClick={()=>{setOpen(!open)}}/>}
          
